@@ -1,10 +1,24 @@
 {
+  "name": "my-wedding-website",
+  "version": "1.0.1",
+  "description": "A wedding website with loads of features on NextJs + ReactJs + Typescript.",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:sofiacoder3000/my-wedding-website.git"
+  },
+  "keywords": [
+    "wedding",
+    "template",
+    "website template"
+  ],
+  "author": "Jakeline Campos",
+  "homepage": "https://github.com/sofiacoder3000/my-wedding-website",
   "dependencies": {
     "next": "latest",
     "react": "18.2.0",
