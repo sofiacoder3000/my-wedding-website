@@ -66,7 +66,7 @@ const Home: NextPage = () => {
           <CardRegular 
             title="Regalo" 
             description="Si quieres, puedes hacernos un regalo para nuestra boda o luna de miel. Hace clic para ver nuestros datos bancarios y hacer una transferencia o un depósito. Si prefieres tambièn tenemos Plin y Yape."
-            url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
+            url="#"
             textbuttom="VER DATOS"
           /> 
         </section>
