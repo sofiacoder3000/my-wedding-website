@@ -8,6 +8,7 @@
   "dependencies": {
     "next": "latest",
     "react": "18.2.0",
+    "react-countdown": "^2.3.4",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
