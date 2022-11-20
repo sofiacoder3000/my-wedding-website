@@ -10,10 +10,10 @@ interface Props {
 const CardRegular: NextPage<Props> = (props) => {
   const { title, description, url, textbuttom } = props;
   return (
-    <div className="w-full bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700 px-6 py-4">
+    <div className="w-full bg-white dark:bg-gray-800 dark:border-gray-700 px-6 py-4">
       <div className="flex flex-col items-center pb-10">
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white font-ebgaramond text-l sm:text-2xl md:text-3xl">{title}</h5>
-          <p className="flex mt-4 md:mt-6 font-light">{description}</p>
+          <p className="flex mt-4 md:mt-6 font-light dark:text-white">{description}</p>
           <div className="flex mt-6 md:mt-8">
             <a href={url} 
               target="_blanck" 
