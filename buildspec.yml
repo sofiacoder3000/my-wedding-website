@@ -1,0 +1,44 @@
+version: 0.1
+
+meta : |
+  AWS CodeBuild buildspec.yml
+  The dependencies are downloaded and the binary built outside of the GOPATH.
+  This requies special consideration is necessary. GOROOT is not set by default.
+  GOPATH is set to /go. GOBIN is necessary for the prebuild go get phase.
+  The repo source must be installed to the GOPATH.
+environment_variables:
+  plaintext:
+    PHASE: "build"
+    PROJECT: "feh-2018"
+    AWS_DEFAULT_REGION: "us-east-1"
+
+phases:
+  install:
+    commands:
+      - echo Installing Node 16...
+      - curl -sL https://deb.nodesource.com/setup_16.x | bash -
+      - apt-get install -y nodejs
+      - echo Installing Yarn...
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+      - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+      - apt install --no-install-recomends yarn
+  pre_build:
+    commands:
+      - echo Installing dependencies...
+      - yarn      
+  build:
+    commands:
+      - echo Building...
+      - yarn build
+
+  post_build:
+    commands:
+      - echo build completed started on `date`
+
+artifacts:
+  type: zip
+  files:
+    - "**/*"
+    - appspec.yml
+  discard-paths: no
+  base-directory: dist
