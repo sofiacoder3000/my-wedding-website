@@ -38,7 +38,11 @@ phases:
 artifacts:
   type: zip
   files:
-    - "**/*"
-    - appspec.yml
+    - .next/**/*
+    - locales/**/*
+    - static/**/*
+    - package.json
+    - next.config.js
+    - tsconfig.json
+    - tsconfig.server.json
   discard-paths: no
-  base-directory: dist
