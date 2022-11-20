@@ -10,11 +10,11 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>Kevin y Jakeline | Nuestra Boda</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
+      <main className="flex w-full flex-1 flex-col items-center justify-center text-center dark:bg-gray-800">
         <section className="relative flex w-full items-center justify-around py-6 bg-cover-novios bg-cover bg-center">
           <div className="absolute h-full w-full bg-zinc-800 opacity-60 z-0"></div>
           <CoverPrincipal
@@ -70,9 +70,9 @@ const Home: NextPage = () => {
             textbuttom="VER DATOS"
           /> 
         </section>
-        <section className="flex w-full items-center justify-around bg-orange-50 py-6"> 
-          <div className="w-full rounded-lg dark:bg-gray-800 dark:border-gray-700 px-6 py-4">
-            <div className="flex flex-col items-center py-10 font-ebgaramond text-2xl sm:text-4xl md:text-5xl italic">
+        <section className="flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-700 dark:border-gray-600"> 
+          <div className="w-full rounded-lg px-6 py-4">
+            <div className="flex flex-col items-center py-10 font-ebgaramond text-2xl sm:text-4xl md:text-5xl italic dark:text-yellow-500">
                 Los esperamos!
             </div>
           </div>
