@@ -41,3 +41,4 @@ artifacts:
     - "**/*"
   discard-paths: no
   base-directory: out
+  discard-paths: yes
