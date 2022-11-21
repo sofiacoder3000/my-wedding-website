@@ -26,7 +26,7 @@ const renderer: CountdownRendererFn = ({ days, hours, minutes, seconds, complete
   } else {
     // Render a countdown
     return (
-      <div className="flex flex-wrap xxs:flex-nowrap w-full justify-around pt-6 pb-6 flex-row dark:bg-gray-900 dark:border-gray-800">
+      <div className="flex flex-wrap xxs:flex-nowrap w-full justify-around pt-6 pb-6 flex-row dark:bg-gray-900 dark:border-gray-800 max-w-5xl">
         <CountdownItem value={days} description="Días"/>
         <CountdownItem value={hours} description="Horas"/>
         <CountdownItem value={minutes} description="Minutos"/>
