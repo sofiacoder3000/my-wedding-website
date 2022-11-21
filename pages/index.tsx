@@ -8,7 +8,7 @@ import TimerCountDown from '../components/timer-count-down'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 text-gray-900 dark:bg-gray-800 dark:text-white">
+    <div className="flex min-h-screen flex-col items-center justify-center text-gray-900 dark:bg-gray-800 dark:text-white">
       <Head>
         <title>Kevin y Jakeline | Nuestra Boda</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,10 +23,10 @@ const Home: NextPage = () => {
             messagebuttom="SÁBADO 03 DE DICIEMBRE"
           />
         </section>
-        <section className="flex w-full items-center justify-around bg-orange-50 py-6 px-2 xxs:px-10 sm:px-20"> 
+        <section className="flex w-full items-center justify-around bg-orange-50 py-6 px-2 xxs:px-10 sm:px-20 dark:bg-gray-900 dark:text-white"> 
           <TimerCountDown />
         </section>
-        <section className="xs:flex w-full items-center justify-around py-6"> 
+        <section className="xs:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
           <CardPersonChat 
             fullname="Kevin Montes" 
             subtitle="Novio" 
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             url="https://wa.link/9jco3t"
           />
         </section>
-        <section className="md:flex w-full items-center justify-around py-6"> 
+        <section className="md:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
           <CardRegular 
             title="Ceremonia" 
             description="La ceremonia será el sábado 3 de Diciembre del 2022 a las 11:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
