@@ -8,13 +8,13 @@ import TimerCountDown from '../components/timer-count-down'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 text-gray-900 dark:bg-gray-800 dark:text-white">
       <Head>
         <title>Kevin y Jakeline | Nuestra Boda</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center text-center dark:bg-gray-800">
+      <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
         <section className="relative flex w-full items-center justify-around py-6 bg-cover-novios bg-cover bg-center">
           <div className="absolute h-full w-full bg-zinc-800 opacity-60 z-0"></div>
           <CoverPrincipal
@@ -23,10 +23,10 @@ const Home: NextPage = () => {
             messagebuttom="SÁBADO 03 DE DICIEMBRE"
           />
         </section>
-        <section className="flex w-full items-center justify-around bg-orange-50 py-6"> 
+        <section className="flex w-full items-center justify-around bg-orange-50 py-6 px-2 xxs:px-10 sm:px-20"> 
           <TimerCountDown />
         </section>
-        <section className="md:flex w-full items-center justify-around py-6"> 
+        <section className="xs:flex w-full items-center justify-around py-6"> 
           <CardPersonChat 
             fullname="Kevin Montes" 
             subtitle="Novio" 
@@ -70,9 +70,9 @@ const Home: NextPage = () => {
             textbuttom="VER DATOS"
           /> 
         </section>
-        <section className="flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-700 dark:border-gray-600"> 
+        <section className="flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-900 dark:border-gray-800"> 
           <div className="w-full rounded-lg px-6 py-4">
-            <div className="flex flex-col items-center py-10 font-ebgaramond text-2xl sm:text-4xl md:text-5xl italic dark:text-yellow-500">
+            <div className="flex flex-col items-center py-10 font-ebgaramond text-3xl sm:text-4xl md:text-5xl italic text-yellow-500 dark:text-yellow-500">
                 Los esperamos!
             </div>
           </div>
@@ -88,10 +88,10 @@ const Home: NextPage = () => {
         
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
+      <footer className="flex h-14 w-full items-center justify-center border-t">
         <a
           className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -20,8 +20,14 @@ module.exports = {
       backgroundImage: {
         'cover-novios': "url('https://d3167i30r8muxf.cloudfront.net/foto-codo-pozuzo.jpg')",
         'cover-novios-2': "url('https://d3167i30r8muxf.cloudfront.net/kevin-sofia-arequipa.jpg')",
+      },
+      screens: {
+        'xxs': '390px',
+        'xs': '475px',
+        ...defaultTheme.screens,
       }
     }
   },
+  darkMode: ['class', '[data-mode="dark"]'],
   plugins: [],
 }
