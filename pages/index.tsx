@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             messagebuttom="SÁBADO 03 DE DICIEMBRE"
           />
         </section>
-        <section className="flex w-full items-center justify-around bg-orange-50 py-6 px-2 xxs:px-10 sm:px-20 dark:bg-gray-900 dark:text-white"> 
+        <section className="flex w-full items-center justify-around bg-orange-50 py-6 px-2 xxs:px-10 sm:px-20 md:px-50 dark:bg-gray-900 dark:text-white"> 
           <TimerCountDown />
         </section>
         <section className="xs:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             url="https://wa.link/9jco3t"
           />
         </section>
-        <section className="md:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
+        <section className="xs:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
           <CardRegular 
             title="Ceremonia" 
             description="La ceremonia será el sábado 3 de Diciembre del 2022 a las 11:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
         
       </main>
 
-      <footer className="flex h-14 w-full items-center justify-center border-t">
+      <footer className="flex h-14 w-full items-center justify-center border-t text-sm">
         <a
           className="flex items-center justify-center gap-2"
           href="#"
