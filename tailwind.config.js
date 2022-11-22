@@ -10,7 +10,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // 'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
         'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
         'ebgaramond': ['EB Garamond', ...defaultTheme.fontFamily.sans],
       },
