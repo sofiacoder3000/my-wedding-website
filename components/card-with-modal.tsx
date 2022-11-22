@@ -22,7 +22,7 @@ const CardItem: NextPage<ItemProps> = (props) => {
         <div className="w-full px-6 py-4" key={id}>
             <div className="flex flex-col items-center pb-2 sm:pb-4">
                 <h5 className="mb-1 font-medium text-gray-900 text-lg sm:text-1xl md:text-2xl">{title}</h5>
-                <div className="h-20 mt-4 md:mt-6 py-2">
+                <div className="h-20 py-2">
                     <ul>
                         {
                             lines && lines.map((line) => (<li key={id}><p className="flex font-light">{line}</p></li>))
@@ -58,10 +58,10 @@ const CardWithModal: NextPage<Props> = (props) => {
       {showModal ? (
         <>
           <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+            <div className="w-full relative my-6 mx-auto max-w-3xl">
               <div className="rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-                  <h3 className="text-1xl sm:text-2xl md:text-3xl font=semibold">{titleModal}</h3>
+                  <h3 className="text-lg sm:text-1xl md:text-2xl font=semibold">{titleModal}</h3>
                   <button
                     className="bg-transparent border-0 text-black float-right"
                     onClick={() => setShowModal(false)}
@@ -71,14 +71,11 @@ const CardWithModal: NextPage<Props> = (props) => {
                     {/* <span className="text-black opacity-7 h-6 w-6 text-xl block bg-gray-400 py-0 rounded-full">x </span> */}
                   </button>
                 </div>
-                <div className="relative p-6 flex-auto">
+                <div className="relative px-6 pt-4 pb-2 flex-auto">
                     <ul className="flex flex-col inline-flex items-center w-full mt-4 md:mt-6 font-light">
-                        <li key="1" className="w-full text-left pt-2"><span><strong>Interbank:</strong> 8213234752838</span></li>
-                        <li key="2" className="w-full text-left pt-2"><span><strong>Interbank CCI:</strong> 00382101323475283863</span></li>
-                        <li key="3" className="w-full text-left pt-2"><span><strong>BBVA:</strong> 0011-0827-0200096254</span></li>
-                        <li key="4" className="w-full text-left pt-2"><span><strong>BBVA CCI:</strong> 011-827-000200096254-34</span></li>      
-                        <li key="5" className="w-full text-left pt-2"><span><strong>BCP:</strong> 19196797949003</span></li>
-                        <li key="6" className="w-full text-left pt-2"><span><strong>BCP CCI:</strong> 00219119679794900353</span></li>      
+                        <li key="1" className="w-full text-center pt-2"><span><strong>Interbank:</strong> 8213234752838</span></li>
+                        <li key="2" className="w-full text-center pt-2"><span><strong>BBVA:</strong> 0011-0827-0200096254</span></li>
+                        <li key="3" className="w-full text-center pt-2"><span><strong>BCP:</strong> 19196797949003</span></li>
                     </ul> 
                     <div className="flex mt-4 md:mt-6">
                         {   items && items.map((item:ItemProps) => {
@@ -88,7 +85,7 @@ const CardWithModal: NextPage<Props> = (props) => {
                         }
                     </div>
                 </div>
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                <div className="flex items-center justify-end px-6 pb-4 rounded-b">
                   <button
                     className="uppercase underline-offset-4 px-8 py-4 border-solid border-4 border-yellow-500 text-sm font-medium text-center text-gray-900 hover:bg-yellow-500 hover:text-white rounded-lg tracking-widestx3"
                     type="button"
