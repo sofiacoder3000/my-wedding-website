@@ -4,6 +4,7 @@ import CoverPrincipal from '../components/cover-principal'
 import CardPersonChat from '../components/card-person-chat'
 import CardRegular from '../components/card-regular'
 import CardRegular2 from '../components/card-regular2'
+import CardWithModal from '../components/card-with-modal'
 import TimerCountDown from '../components/timer-count-down'
 
 const Home: NextPage = () => {
@@ -27,48 +28,60 @@ const Home: NextPage = () => {
           <TimerCountDown />
         </section>
         <section className="xs:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
-          <CardPersonChat 
-            fullname="Kevin Montes" 
-            subtitle="Novio" 
-            picture="https://d3167i30r8muxf.cloudfront.net/carlitos_kevin.jpg" 
-            url="https://wa.link/3kd77p"
-          />               
-          <CardPersonChat 
-            fullname= "Sofia Campos" 
-            subtitle="Novia" 
-            picture="https://d3167i30r8muxf.cloudfront.net/girl.jpg"
-            url="https://wa.link/9jco3t"
-          />
+          <div className="xs:flex w-full items-center justify-around max-w-5xl">
+            <CardPersonChat 
+              fullname="Kevin Montes" 
+              subtitle="Novio" 
+              picture="https://d3167i30r8muxf.cloudfront.net/carlitos_kevin.jpg" 
+              url="https://wa.link/3kd77p"
+            />               
+            <CardPersonChat 
+              fullname= "Sofia Campos" 
+              subtitle="Novia" 
+              picture="https://d3167i30r8muxf.cloudfront.net/girl.jpg"
+              url="https://wa.link/9jco3t"
+            />
+          </div>
         </section>
         <section className="xs:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
-          <CardRegular 
-            title="Ceremonia" 
-            description="La ceremonia será el sábado 3 de Diciembre del 2022 a las 11:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
-            url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
-            textbuttom="VER MAPA"
-          />               
-          <CardRegular 
-            title="Fiesta" 
-            description="La fiesta será el sábado 3 de Diciembre del 2022 a las 12:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
-            url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
-            textbuttom="VER MAPA"
-          />  
+          <div className="xs:flex w-full items-center justify-around max-w-5xl">
+            <CardRegular 
+              title="Ceremonia" 
+              description="La ceremonia será el sábado 3 de Diciembre del 2022 a las 11:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
+              url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
+              textbuttom="VER MAPA"
+            />               
+            <CardRegular 
+              title="Fiesta" 
+              description="La fiesta será el sábado 3 de Diciembre del 2022 a las 12:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
+              url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
+              textbuttom="VER MAPA"
+            />
+          </div>
         </section>
         <section className="md:flex w-full items-center justify-around bg-orange-50 py-6">
-          <CardRegular2 
-            title="¿Canciones que no pueden faltar?" 
-            description="Puedes recomendar canciones o artistas que no pueden faltar en la boda"
-            url="https://chat.whatsapp.com/Jn9HGhN1eo6GCcKM0v575J"
-            textbuttom="SUGERIR MÚSICA"
-          />  
+          <div className="xs:flex w-full items-center justify-around max-w-5xl">
+            <CardRegular2 
+              title="¿Canciones que no pueden faltar?" 
+              description="Puedes recomendar canciones o artistas que no pueden faltar en la boda"
+              url="https://chat.whatsapp.com/Jn9HGhN1eo6GCcKM0v575J"
+              textbuttom="SUGERIR MÚSICA"
+            />
+          </div>
         </section>        
         <section className="md:flex w-full items-center justify-around py-6"> 
-          <CardRegular 
-            title="Regalo" 
-            description="Si quieres, puedes hacernos un regalo para nuestra boda o luna de miel. Hace clic para ver nuestros datos bancarios y hacer una transferencia o un depósito. Si prefieres tambièn tenemos Plin y Yape."
-            url="#"
-            textbuttom="VER DATOS"
-          /> 
+          <div className="xs:flex w-full items-center justify-around max-w-5xl">
+            <CardWithModal 
+              title="Regalo" 
+              titleModal="Nuestras cuentas 😇"
+              description="Si quieres, puedes hacernos un regalo para nuestra boda o luna de miel."
+              textbuttom="VER DATOS"
+              items={[
+                {id:1, title:"Plin", lines:["986896116"], image:"https://d3167i30r8muxf.cloudfront.net/plin-logo.png"},
+                {id:2, title:"Yape", lines:["986896116", "978113924"], image:"https://d3167i30r8muxf.cloudfront.net/yape-app-logo.png"}
+              ]}
+            /> 
+          </div>
         </section>
         <section className="flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-900 dark:border-gray-800"> 
           <div className="w-full rounded-lg px-6 py-4">
