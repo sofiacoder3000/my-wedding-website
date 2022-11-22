@@ -72,10 +72,14 @@ const CardWithModal: NextPage<Props> = (props) => {
                   </button>
                 </div>
                 <div className="relative p-6 flex-auto">
-                    <p className="flex mt-4 md:mt-6 font-light">{description}</p>
+                    <p className="mt-4 md:mt-6 font-light">{description}</p>
                     <ul className="flex flex-col inline-flex items-center w-full mt-4 md:mt-6 font-light">
-                        <li key="1" className="flex pt-2"><span><strong>Interbank:</strong> 8213234752838</span></li>
-                        <li key="2" className="flex pt-2"><span><strong>Interbank CCI:</strong> 00382101323475283863</span></li>                        
+                        <li key="1" className="w-full pt-2"><span><strong>Interbank:</strong> 8213234752838</span></li>
+                        <li key="2" className="w-full pt-2"><span><strong>Interbank CCI:</strong> 00382101323475283863</span></li>
+                        <li key="3" className="w-full pt-2"><span><strong>BBVA:</strong> 0011-0827-0200096254</span></li>
+                        <li key="4" className="w-full pt-2"><span><strong>BBVA CCI:</strong> 011-827-000200096254-34</span></li>      
+                        <li key="5" className="w-full pt-2"><span><strong>BCP:</strong> 19196797949003</span></li>
+                        <li key="6" className="w-full pt-2"><span><strong>BCP CCI:</strong> 00219119679794900353</span></li>      
                     </ul> 
                     <div className="flex mt-4 md:mt-6">
                         {   items && items.map((item:ItemProps) => {
