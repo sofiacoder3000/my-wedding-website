@@ -25,7 +25,7 @@ const CardItem: NextPage<ItemProps> = (props) => {
                 <div className="h-20 mt-4 md:mt-6 py-2">
                     <ul>
                         {
-                            lines && lines.map((line, index) => (<li key={index}><p className="flex font-light">{line}</p></li>))
+                            lines && lines.map((line) => (<li key={id}><p className="flex font-light">{line}</p></li>))
                         }
                     </ul>                    
                 </div>
