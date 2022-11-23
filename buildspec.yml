@@ -46,6 +46,5 @@ artifacts:
     - next.config.js
     - tsconfig.json
     - tsconfig.server.json
-  discard-paths: no
+  discard-paths: yes
   base-directory: out
-  # discard-paths: yes

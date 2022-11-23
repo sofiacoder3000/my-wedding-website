@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import CoverPrincipal from '../components/cover-principal'
+import CoverSocialMedia from '../components/cover-social-media'
 import CardPersonChat from '../components/card-person-chat'
 import CardRegular from '../components/card-regular'
 import CardRegular2 from '../components/card-regular2'
@@ -46,12 +47,14 @@ const Home: NextPage = () => {
         <section className="xs:flex w-full items-center justify-around py-6 dark:bg-gray-800 dark:text-white"> 
           <div className="xs:flex w-full items-center justify-around max-w-5xl">
             <CardRegular 
+              icon=""            
               title="Ceremonia" 
               description="La ceremonia será el sábado 3 de Diciembre del 2022 a las 11:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
               url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
               textbuttom="VER MAPA"
             />               
             <CardRegular 
+              icon=""
               title="Fiesta" 
               description="La fiesta será el sábado 3 de Diciembre del 2022 a las 12:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
               url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
@@ -59,7 +62,7 @@ const Home: NextPage = () => {
             />
           </div>
         </section>
-        <section className="md:flex w-full items-center justify-around bg-orange-50 py-6">
+        <section className="md:flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-900 dark:border-gray-800">
           <div className="xs:flex w-full items-center justify-around max-w-5xl">
             <CardRegular2 
               title="¿Canciones que no pueden faltar?" 
@@ -69,7 +72,7 @@ const Home: NextPage = () => {
             />
           </div>
         </section>        
-        <section className="md:flex w-full items-center justify-around py-6"> 
+        <section className="md:flex w-full items-center justify-around py-6 "> 
           <div className="xs:flex w-full items-center justify-around max-w-5xl">
             <CardWithModal 
               title="Regalo" 
@@ -82,6 +85,16 @@ const Home: NextPage = () => {
               ]}
             /> 
           </div>
+        </section>
+        <section className="relative flex w-full items-center justify-around py-6 bg-cover-novios bg-cover bg-center">
+          <div className="absolute h-full w-full bg-white dark:bg-zinc-800 opacity-75 dat z-0"></div>
+          <CoverSocialMedia
+            icon=""
+            urlSocialMedia="https://www.instagram.com/explore/tags/kevinysofia/"
+            title="#KevinYSofia"
+            description="Usa nuestro hashtag en instagram para subir tus fotos y videos"
+            textbuttom="Ver en instagram"
+          />
         </section>
         <section className="flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-900 dark:border-gray-800"> 
           <div className="w-full rounded-lg px-6 py-4">
