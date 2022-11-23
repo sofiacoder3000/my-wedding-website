@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
-import { SP } from 'next/dist/shared/lib/utils';
-import Countdown, { zeroPad, calcTimeDelta, formatTimeDelta, CountdownRendererFn } from 'react-countdown';
+import Countdown, { zeroPad, CountdownRendererFn } from 'react-countdown';
 
 interface CountdownItemProps {
   value: number;
@@ -12,12 +11,12 @@ const CountdownItem: NextPage<CountdownItemProps> = (props) => {
   return (
     <span className="flex w-1/2 xxs:w-full items-center flex-col p-2 font-light text-yellow-500">
       <span className="text-2xl xxs:text-3xl sm:text-4xl md:text-5xl py-2">{zeroPad(value)}</span>
-      <span className="text-sm xxs:text-base sm:text-xl">{description}</span>
+      <span className="text-xs xxs:text-base sm:text-xl">{description}</span>
     </span>
   )
 }
 
-const Completionist = () => <span>You are good to go!</span>;
+const Completionist = () => <span>Hora de ir!</span>;
 
 const renderer: CountdownRendererFn = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {

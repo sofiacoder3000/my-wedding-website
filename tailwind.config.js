@@ -27,6 +27,6 @@ module.exports = {
       }
     }
   },
-  darkMode: ['class', '[data-mode="dark"]'],
+  // darkMode: ['class', '[data-mode="dark"]'],
   plugins: [],
 }
