@@ -10,7 +10,7 @@ import TimerCountDown from '../components/timer-count-down'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center text-gray-900 dark:bg-gray-800 dark:text-white">
+    <div className="flex min-h-screen flex-col items-center justify-center font-montserrat text-gray-900 dark:bg-gray-800 dark:text-white">
       <Head>
         <title>Kevin y Jakeline | Nuestra Boda</title>
         <link rel="icon" href="/favicon.ico" />
