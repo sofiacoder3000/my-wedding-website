@@ -48,7 +48,7 @@ const CardWithModal: NextPage<Props> = (props) => {
       <h5 className="mb-1 font-medium italic font-ebgaramond text-2xl sm:text-3xl md:text-4xl">{title}</h5>
       <p className="mt-4 md:mt-6 font-light">{description}</p>
       <button 
-        className="mt-4 md:mt-6 inline-flex items-center px-8 py-4 text-sm font-medium text-center border-solid border-4 border-yellow-500 rounded-lg tracking-widestx3" 
+        className="mt-4 md:mt-6 inline-flex items-center px-8 py-4 text-sm font-medium text-center border-solid border-4 border-yellow-400 rounded-lg tracking-widestx3" 
         type="button" 
         onClick={() => setShowModal(true)}
       >
@@ -87,7 +87,7 @@ const CardWithModal: NextPage<Props> = (props) => {
                 </div>
                 <div className="flex items-center justify-end px-6 pb-4 rounded-b">
                   <button
-                    className="uppercase underline-offset-4 px-8 py-4 border-solid border-4 border-yellow-500 text-sm font-medium text-center hover:bg-yellow-500 hover:text-white rounded-lg tracking-widestx3"
+                    className="uppercase underline-offset-4 px-8 py-4 border-solid border-4 border-yellow-400 text-sm font-medium text-center hover:bg-yellow-400 hover:text-white rounded-lg tracking-widestx3"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >

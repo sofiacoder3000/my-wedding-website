@@ -20,7 +20,7 @@ const CoverSocialMedia: NextPage<CoverSocialMediaProps> = (props) => {
           <a 
             href={urlSocialMedia} 
             target="_blanck" 
-            className="inline-flex items-center px-8 py-4 uppercase text-sm font-medium text-center border-solid border-4 bg-yellow-500 border-yellow-500 transition duration-0 hover:duration-150 hover:bg-transparent dark:hover:text-white rounded-lg tracking-widestx3">{textbuttom}</a>
+            className="inline-flex items-center px-8 py-4 uppercase text-sm font-medium text-center border-solid border-4 bg-yellow-400 border-yellow-400 transition duration-0 hover:duration-150 hover:bg-transparent dark:hover:text-white rounded-lg tracking-widestx3">{textbuttom}</a>
         </div>
       </div>
   </div>

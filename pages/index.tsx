@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             <CardPersonChat 
               fullname= "Sofia Campos" 
               subtitle="Novia" 
-              picture="https://d3167i30r8muxf.cloudfront.net/girl.jpg"
+              picture="https://d3167i30r8muxf.cloudfront.net/Jakeline-Campos-Cabello.jpg"
               url="https://wa.link/9jco3t"
             />
           </div>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             <CardRegular 
               icon=""
               title="Fiesta" 
-              description="La fiesta será el sábado 3 de Diciembre del 2022 a las 12:00am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
+              description="La fiesta será el sábado 3 de Diciembre del 2022 a las 11:30am  en Jr. Tarapacá 627, 10001 Huánuco-Perú."
               url="https://goo.gl/maps/omZU1npVg8t6qsRa6"
               textbuttom="VER MAPA"
             />
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
         </section>
         <section className="flex w-full items-center justify-around bg-orange-50 py-6 dark:bg-gray-900 dark:border-gray-800"> 
           <div className="w-full rounded-lg px-6 py-4">
-            <div className="flex flex-col items-center py-10 font-ebgaramond text-3xl sm:text-4xl md:text-5xl italic text-yellow-500 dark:text-yellow-500">
+            <div className="flex flex-col items-center py-10 font-ebgaramond text-3xl sm:text-4xl md:text-5xl italic text-yellow-400 dark:text-yellow-400">
                 Los esperamos!
             </div>
           </div>
@@ -109,6 +109,12 @@ const Home: NextPage = () => {
             subtitle="Wedding Planner" 
             picture="https://d3167i30r8muxf.cloudfront.net/Diana-Campos.jpg" 
             url="https://wa.link/l2uigi"
+          />
+          <CardPersonChat 
+            fullname="Stephany Espinoza" 
+            subtitle="Profesora de baile" 
+            picture="https://d3167i30r8muxf.cloudfront.net/Stephany-Espinoza.jpg" 
+            url="https://wa.link/5qq29i"
           />
         </section>
         
